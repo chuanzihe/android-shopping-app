@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.wssholmes.stark.circular_score.CircularScoreView
+            android:id="@+id/scoreview"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:visibility="visible"
+            app:score="50"
+            app:setBackgroundColor="@android:color/transparent"
+            app:setPrimaryColor="@color/colorBar"
+            app:setTextColor="@android:color/black" />
+
+        <TableRow
+            android:id="@+id/header_soldby"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/ic_sold_by"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/truck" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="Sold by"
+                android:textColor="@android:color/black" />
+
+        </TableRow>
+
+        <TableLayout
+            android:id="@+id/ship_table_soldby"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="350dp"
+            android:layout_height="2dp"
+            android:layout_gravity="right"
+            android:background="@android:color/darker_gray" />
+
+        <TableRow
+            android:id="@+id/header_shipping"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/ic_shipping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ferry" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Shipping"
+                android:textColor="@android:color/black" />
+
+        </TableRow>
+
+        <TableLayout
+            android:id="@+id/ship_table_shipping"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </TableLayout>
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="350dp"
+            android:layout_height="2dp"
+            android:layout_gravity="right"
+            android:background="@android:color/darker_gray" />
+
+        <TableRow
+            android:id="@+id/header_return"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/dump_truck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Return"
+                android:textColor="@android:color/black" />
+
+        </TableRow>
+
+        <TableLayout
+            android:id="@+id/ship_table_return"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </TableLayout>
+
+
+        <TextView
+            android:id="@+id/error_noresult"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="No results."
+            android:visibility="visible" />
+
+    </LinearLayout>
+</ScrollView>

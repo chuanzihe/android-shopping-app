@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="190dp"
+    android:layout_height="350dp"
+    android:layout_margin="1dp"
+    app:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="354dp"
+        android:layout_margin="4dp">
+
+        <ImageView
+            android:id="@+id/results_imageView"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="7dp"
+            android:padding="2dp" />
+
+        <TextView
+            android:id="@+id/results_title"
+            android:layout_width="170dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/results_imageView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="4dp"
+            android:elegantTextHeight="false"
+            android:text="Title Title Title Title Title Title TitleTitle Title Title Title Title Title Title TitleTitle  "
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/results_zipcode"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/results_title"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="37dp"
+            android:text="zipcode" />
+
+        <TextView
+            android:id="@+id/results_shipping"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/results_zipcode"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="-1dp"
+            android:text="shipping" />
+
+        <TextView
+            android:id="@+id/results_condition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="13dp"
+            android:text="condition" />
+
+        <ImageView
+            android:id="@+id/results_wishlist"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/results_title"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="6dp" />
+
+        <TextView
+            android:id="@+id/results_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="13dp"
+            android:text="price" />
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
